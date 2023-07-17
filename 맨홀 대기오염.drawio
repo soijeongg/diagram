@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-17T11:55:57.947Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="UvAa_h1uEdaxKuJQQ-Ip" version="21.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-17T12:03:48.269Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="EAHU9C44Hk3q5D1YdQ7s" version="21.6.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -95,6 +95,59 @@
         </mxCell>
         <mxCell id="kXuWV4sIPibfsXfOx4F9-11" value="현상유지" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="520" y="410" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-12" value="한시간 마다 측정" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="660" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-14" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kXuWV4sIPibfsXfOx4F9-12">
+          <mxGeometry x="-0.375" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="160" y="680" as="sourcePoint" />
+            <mxPoint x="190" y="681" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-16" value="(모든)센서&lt;br&gt;값중 특이값이 발생?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="640" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-17" value="YES" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kXuWV4sIPibfsXfOx4F9-16">
+          <mxGeometry x="-0.375" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="320" y="680" as="sourcePoint" />
+            <mxPoint x="360" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="690" />
+              <mxPoint x="340" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-18" value="저장" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="370" y="655" width="60" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-19" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="750" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-20" value="DB값을 요청" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="140" y="730" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-21" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kXuWV4sIPibfsXfOx4F9-19" target="kXuWV4sIPibfsXfOx4F9-20">
+          <mxGeometry x="-0.375" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="140" y="740" as="sourcePoint" />
+            <mxPoint x="130" y="780" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-22" value="값을 보여줌" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="760" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kXuWV4sIPibfsXfOx4F9-23" value="YES" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kXuWV4sIPibfsXfOx4F9-20" target="kXuWV4sIPibfsXfOx4F9-22">
+          <mxGeometry x="-0.375" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="280" y="780" as="sourcePoint" />
+            <mxPoint x="340" y="780" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
